@@ -1,14 +1,30 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+"juices":[
+{
+	"id":1,
+	"name":"Apple Juice",
+	"cost":65,
+	"imageUrl":"https://images.pexels.com/photos/4551975/pexels-photo-4551975.jpeg?cs=srgb&dl=pexels-roman-odintsov-4551975.jpg&fm=jpg"
+},
+{
+	"id":2,
+	"name":"Orange Juice",
+	"cost":60,
+	"imageUrl":"https://th.bing.com/th/id/OIP.nT0_j2wdtNdnuyFMbgSv5QHaIx?rs=1&pid=ImgDetMain"
+},
+{
+	"id":3,
+	"name":"Pineapple Juice",
+	"cost":55,
+	"imageUrl":"https://th.bing.com/th/id/R.86515b09dd77cce5661c0f3550f55b48?rik=3olJCyBZE%2bd%2bYw&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-2%2fPineapple-Juice-Wallpaper-08480.jpg&ehk=PQ%2f3ILYS1fnMlDOv9nQ1YwpquOi7zVLtzL9BUF8IwtA%3d&risl=&pid=ImgRaw&r=0"
+},
+{
+	"id":4,
+	"name":"Grapes Juice",
+	"cost":50,
+	"imageUrl":"https://th.bing.com/th/id/OIP.GVFBa7MvElqNFpmmO1MpVQHaE6?rs=1&pid=ImgDetMain"
 }
+]
+}
+
+

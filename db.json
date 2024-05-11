@@ -1,14 +1,38 @@
+{[{
+    id: 5928101,
+    category: 'animal welfare',
+    title: 'Cat Adoption Day',
+    description: 'We are holding a day of cat adoption',
+    location: '123 Main St, Anytown',
+    date: '2022-01-01',
+    time: '10:00 AM',
+    petsAllowed: true,
+    volunteersAllowed: true,
+    organizer: 'John Doe'
+},
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  id: 5928102,
+  category: 'animal welfare',
+  title: 'Dog Adoption Day',
+  description: 'We are holding a day of dog adoption',
+  location: '123 Main St, Anytown',
+  date: '2022-01-01',
+  time: '10:00 AM',
+  petsAllowed: true,
+  volunteersAllowed: true,
+  organizer: 'Jane Doe'
+},
+{
+  id: 5928103,
+  category: 'animal welfare',
+  title: 'Bird Adoption Day',
+  description: 'We are holding a day of bird adoption',
+  location: '123 Main St, Anytown',
+  date: '2022-01-01',
+  time: '10:00 AM',
+  petsAllowed: true,
+  volunteersAllowed: true,
+  organizer: 'John Doe'
+}
+]
 }

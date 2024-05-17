@@ -4,6 +4,13 @@
     { "id": 2, "title": "Post 2" },
     { "id": 3, "title": "Post 3" }
   ],
+  "products": [
+      { "id": 1, "title": "Samsung Refrigerator", "description": "Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door Refrigerator (RR20C1724CU/HL, Camellia Blue, 2024 Model)", "img": "https://m.media-amazon.com/images/I/71ecWAy-JuL._AC_UY327_FMwebp_QL65_.jpg", "price": 25000, "rating": 4 },
+      { "id": 2, "title": "samsung Tv", "description": "Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door Refrigerator (RR20C1724CU/HL, Camellia Blue, 2024 Model)", "img": "https://m.media-amazon.com/images/I/81iHoqX8kIL._AC_UY327_QL65_.jpg", "price": 164000, "rating": 4.5 },
+      { "id": 3, "title": "Bosch Mixer", "description": "Bosch TrueMixx Pro Mixer Grinder, 1000W 4 Jars Black", "img": "https://m.media-amazon.com/images/I/81Cir3akReL._AC_UY327_FMwebp_QL65_.jpg", "price": 6500, "rating": 4 },
+      { "id": 4, "title": "Godrej Locker", "description": "Godrej Forte Pro 30 Litres Digital Electronic Safe Locker for Home & Office with Motorized Locking Mechanism (Light Grey)", "img": "https://m.media-amazon.com/images/I/61mOh0cZHHL._AC_UL480_FMwebp_QL65_.jpg", "price": 18990, "rating": 4.5},
+      { "id": 5, "title": "Havells Cooler", "description": "Havells Celia-I 55L Desert Air Cooler for home | Electronic Panel with Remote | Powerful Air Delivery | Everlast Pump | High Density Honeycomb Pads | Heavy Duty (White/Brown)", "img": "https://m.media-amazon.com/images/I/61V5Gsjg-SL._AC_UL480_QL65_.jpg", "price": 12600, "rating": 3.5 },
+    ],
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 },
     { "id": 2, "body": "some comment", "postId": 1 }

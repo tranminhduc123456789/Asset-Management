@@ -1,14 +1,70 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+    "contacts": [
+      {
+        "id": "0e58a630-64fd-4bb4-bfd2-56d7e33e7670",
+        "name": "Rajanss",
+        "imageUrl": "https://tse3.mm.bing.net/th?id=OIP.Lpx9j83qR_cfQuaPHuvwWQHaHw&pid=Api&P=0&h=180",
+        "email": "rajan@gmail.com",
+        "mobile": "9878675657",
+        "company": "HCL",
+        "title": "Sr. Software Engineer",
+        "groupId": "2"
+      },
+      {
+        "id": "eda03226-8fc9-4a13-a413-010ef249b36f",
+        "name": "Rajesh",
+        "imageUrl": "https://tse4.mm.bing.net/th?id=OIP.awAiMS1BCAQ2xS2lcdXGlwHaHH&pid=Api&P=0&h=180",
+        "email": "Rajesh@gmail.com",
+        "mobile": "9878675654",
+        "company": "infosis",
+        "title": "Sr. Software Engineer",
+        "groupId": "4"
+      },
+      {
+        "id": "eda03226-8fc9-4a13-a413-010ef249b36g",
+        "name": "Ramesh",
+        "imageUrl": "https://tse4.mm.bing.net/th?id=OIP.awAiMS1BCAQ2xS2lcdXGlwHaHH&pid=Api&P=0&h=180",
+        "email": "Ramesh@gmail.com",
+        "mobile": "9878675654",
+        "company": "accenture",
+        "title": "Sr. Software Engineer",
+        "groupId": "2"
+      },
+      {
+        "id": "c720",
+        "name": "Abhay Pawar",
+        "imageUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbuffer.com%2Flibrary%2Ffree-images%2F&psig=AOvVaw0eWQx5tAMpXsjRtiAa7shN&ust=1704402531482000&source=images&cd=vfe&ved=0CBMQjRxqFwoTCJC22LGQwoMDFQAAAAAdAAAAABAE",
+        "mobile": "09880819069",
+        "email": "abhayrpawar123@gmail.com",
+        "company": "unifox",
+        "title": "manman",
+        "groupId": "5"
+      }
+    ],
+    "groups": [
+      {
+        "id": "1",
+        "name": "Family"
+      },
+      {
+        "id": "2",
+        "name": "Collegue"
+      },
+      {
+        "id": "3",
+        "name": "Friend"
+      },
+      {
+        "id": "4",
+        "name": "Social"
+      },
+      {
+        "id": "5",
+        "name": "Service"
+      },
+      {
+        "id": "6",
+        "name": "Community"
+      }
+    ]
   }
-}

@@ -1,14 +1,25 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "products": [
+    {
+      "name": "Product A",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "https://example.com/product-a.jpg",
+      "price": 49.99,
+      "rating": 4.5
+    },
+    {
+      "name": "Product B",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": "https://example.com/product-b.jpg",
+      "price": 29.99,
+      "rating": 3.8
+    },
+    {
+      "name": "Product C",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "image": "https://example.com/product-c.jpg",
+      "price": 79.99,
+      "rating": 4.2
+    }
+  ]
 }

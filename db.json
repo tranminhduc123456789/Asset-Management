@@ -1,14 +1,82 @@
-{
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
-}
+[
+    {
+        "title": "How a Retirement Withdrawal Can Lead to a Perjury Conviction",
+        "description": "A prominent lawyer was recently sentenced to home confinement for falsely claiming hardship to withdraw funds. How desperate must you be to take money out?By Ron Lieber",
+        "image": "https://static01.nyt.com/images/2024/05/30/business/00money/00money-thumbWide.jpg?quality=75&auto=webp&disable=upscale",
+        "author": "Ron Lieber",
+        "date": "2024/06/01",
+        "url": "https://www.nytimes.com/2024/06/01/business/retirement-hardship-withdrawal-marilyn-mosby.html"
+    },
+    {
+        "title": "Alzheimer’s Takes a Financial Toll Long Before Diagnosis, Study Finds",
+        "description": "New research shows that people who develop dementia often begin falling behind on bills years earlier.By Ben Casselman",
+        "image": "https://static01.nyt.com/images/2024/05/31/business/31alzheimers-finance-promo/31alzheimers-finance-promo-thumbWide.jpg?quality=75&auto=webp&disable=upscale",
+        "author": "Ben Casselman",
+        "date": "2024/05/31",
+        "url": "https://www.nytimes.com/2024/05/31/business/economy/alzheimers-disease-personal-finance.html"
+    },
+    {
+        "title": "The High-Class Problem That Comes With Home Equity",
+        "description": "You may feel richer as you pay your mortgage down and home values go up. Using that equity is another matter entirely.By Ron Lieber",
+        "image": "https://static01.nyt.com/images/2024/05/20/business/18money/18money-thumbWide.jpg?quality=75&auto=webp&disable=upscale",
+        "author": "Ron Lieber",
+        "date": "2024/05/19",
+        "url": "https://www.nytimes.com/2024/05/19/your-money/home-equity-retirement.html"
+    },
+    {
+        "title": "Getting Started With Savings",
+        "description": "The earlier you begin trying to save, the easier you’ll make things for your future self.By Tara Siegel Bernard",
+        "image": "https://static01.nyt.com/images/2024/05/03/business/5_future_gif/5_future-thumbWide.jpg?quality=75&auto=webp&disable=upscale",
+        "author": "Tara Siegel Bernard",
+        "date": "2024/05/17",
+        "url": "https://www.nytimes.com/2024/05/17/your-money/saving-money.html"
+    },
+    {
+        "title": "F.S.A. vs. H.S.A.: What to Know About the Accounts That Pay Medical Costs",
+        "description": "Flexible spending accounts and health savings accounts both have tax benefits, but both may also have drawbacks, two reports found.By Ann Carrns",
+        "image": "https://static01.nyt.com/images/2024/05/18/business/17adviser-print/17adviser-thumbWide.jpg?quality=75&auto=webp&disable=upscale",
+        "author": "Ann Carrns",
+        "date": "2024/05/17",
+        "url": "https://www.nytimes.com/2024/05/17/your-money/hsa-fsa-taxes.html"
+    },
+    {
+        "title": "Managing Your Debt",
+        "description": "How to make a plan for tackling your debt, improving your credit score and feel like the money you owe isn’t controlling you.By Tara Siegel Bernard",
+        "image": "https://static01.nyt.com/images/2024/05/03/business/4_debt_gif/4_debt-thumbWide.jpg?quality=75&auto=webp&disable=upscale",
+        "author": "Tara Siegel Bernard",
+        "date": "2024/05/16",
+        "url": "https://www.nytimes.com/2024/05/16/your-money/managing-debt.html"
+    },
+    {
+        "title": "Budgeting for the Haters",
+        "description": "How to think about budgeting — without all the shame and blame.By Ron Lieber",
+        "image": "https://static01.nyt.com/images/2024/05/03/business/3_budget_gif/3_budget-thumbWide.jpg?quality=75&auto=webp&disable=upscale",
+        "author": "Ron Lieber",
+        "date": "2024/05/15",
+        "url": "https://www.nytimes.com/2024/05/15/your-money/budgeting-money.html"
+    },
+    {
+        "title": "Meeting Yourself Where You’re At",
+        "description": "Whether you’re still in school, looking for a job or already working, we have some tips for you.By Ron Lieber",
+        "image": "https://static01.nyt.com/images/2024/04/29/business/00money-financial-bootcamp-05/00money-financial-bootcamp-05-thumbWide.jpg?quality=75&auto=webp&disable=upscale",
+        "author": "Ron Lieber",
+        "date": "2024/05/14",
+        "url": "https://www.nytimes.com/2024/05/14/your-money/budgeting-money.html"
+    },
+    {
+        "title": "A Boot Camp for 20-Somethings",
+        "description": "Advice, explainers and exercises on taking advantage of job benefits, creating a budget, paying off debt and thinking about your future.By Tara Siegel Bernard, Ron Lieber and Mike Dang",
+        "image": "https://static01.nyt.com/images/2024/05/02/business/1_intro_gif/1_intro-gif-thumbWide.jpg?quality=75&auto=webp&disable=upscale",
+        "author": "Tara Siegel Bernard, Ron Lieber and Mike Dang",
+        "date": "2024/05/13",
+        "url": "https://www.nytimes.com/2024/05/13/your-money/your-money-a-boot-camp-for-20-somethings.html"
+    },
+    {
+        "title": "Can Your Investment Portfolio Reflect Your Values?",
+        "description": "Forget about endowments and their holdings and divestment for a minute. What do you stand for, and how can you make your portfolio reflect that?By Ron Lieber",
+        "image": "https://static01.nyt.com/images/2024/05/18/business/11money-print/11money-thumbWide.jpg?quality=75&auto=webp&disable=upscale",
+        "author": "Ron Lieber",
+        "date": "2024/05/11",
+        "url": "https://www.nytimes.com/2024/05/11/your-money/investment-portfolio-reflect-values.html"
+    }
+]

@@ -10,5 +10,5 @@ const port = process.env.PORT || 3000;
 app.use(middlewares);
 app.use(router);
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server running port ${port}`);
 });

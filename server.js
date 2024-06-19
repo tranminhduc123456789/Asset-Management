@@ -95,6 +95,16 @@ app.get('/chains/:id/full', (req, res) => {
   res.json(fullChainInfo);
 });
 
+// Обработчик GET запросов для /chains/:id
+app.get('/chains/:id', (req, res) => {
+  const chainId = parseInt(req.params.id, 10);
+  const chain = db.get('chains').find({ id: chainId }).value();
+  if (!chain) {
+    return res.status(404).json({ error: 'Chain not found' });
+  }
+  res.json(chain);
+});
+
 app.use((req, res, next) => {
   req.app.db = db;
   next();

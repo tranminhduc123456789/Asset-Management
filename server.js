@@ -16,10 +16,22 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 const middlewares = jsonServer.defaults();
-const router = jsonServer.router(db); // Используем базу данных из lowdb напрямую
+const router = jsonServer.router(db);
 
 app.use(middlewares);
 app.use(jsonServer.bodyParser);
+
+app.use((req, res, next) => {
+  if (req.method !== 'GET') {
+    const apiKey = req.headers['x-api-key'];
+    const expectedApiKey = '12345678910';
+
+    if (!apiKey || apiKey !== expectedApiKey) {
+      return res.status(403).json({ error: 'Forbidden' });
+    }
+  }
+  next();
+});
 
 app.use((req, res, next) => {
   req.app.db = db;
@@ -30,5 +42,5 @@ app.use(router);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`JSON Server is running on port ${port}`);
+  console.log(`Server running port ${port}`);
 });

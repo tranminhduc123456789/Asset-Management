@@ -19,10 +19,11 @@ const middlewares = jsonServer.defaults();
 app.use(middlewares);
 app.use(jsonServer.bodyParser);
 
+// Middleware для проверки ключа в заголовках
 app.use((req, res, next) => {
   if (req.method !== 'GET') {
     const apiKey = req.headers['x-api-key'];
-    const expectedApiKey = '12345678910';
+    const expectedApiKey = 'your-secret-api-key'; // Замените на ваш реальный ключ
 
     if (!apiKey || apiKey !== expectedApiKey) {
       return res.status(403).json({ error: 'Forbidden' });
@@ -31,11 +32,15 @@ app.use((req, res, next) => {
   next();
 });
 
+// Обработчик POST запросов для /chains
 app.post('/chains', (req, res) => {
   const newChain = req.body;
   const chainId = newChain.id;
 
-  db.get('chains').push(newChain).write();
+  // Добавляем в основную коллекцию только основные поля
+  db.get('chains').push({ id: chainId, name: newChain.name }).write();
+
+  // Добавляем в соответствующие коллекции
   db.get('shortNames').push({ id: chainId, shortName: newChain.shortName, chainId: chainId }).write();
   db.get('chainIds').push({ id: chainId, chainId: chainId, chainIdValue: newChain.chainIdValue }).write();
   db.get('networks').push({ id: chainId, network: newChain.network, chainId: chainId }).write();
@@ -56,6 +61,7 @@ app.post('/chains', (req, res) => {
   res.status(201).json(newChain);
 });
 
+// Custom route to get chain info with all parameters
 app.get('/chains/:id/full', (req, res) => {
   const chainId = parseInt(req.params.id, 10);
   const chain = db.get('chains').find({ id: chainId }).value();

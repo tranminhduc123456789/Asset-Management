@@ -37,6 +37,12 @@ app.post('/chains', (req, res) => {
   const newChain = req.body;
   const chainId = newChain.id;
 
+  // Проверка на наличие объекта с таким id
+  const existingChain = db.get('chains').find({ id: chainId }).value();
+  if (existingChain) {
+    return res.status(400).json({ error: 'Chain with this ID already exists' });
+  }
+
   // Добавляем в основную коллекцию только основные поля
   db.get('chains').push({ id: chainId, name: newChain.name }).write();
 

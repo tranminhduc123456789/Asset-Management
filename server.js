@@ -19,11 +19,10 @@ const middlewares = jsonServer.defaults();
 app.use(middlewares);
 app.use(jsonServer.bodyParser);
 
-// Middleware для проверки ключа в заголовках
 app.use((req, res, next) => {
   if (req.method !== 'GET') {
     const apiKey = req.headers['x-api-key'];
-    const expectedApiKey = 'your-secret-api-key'; // Замените на ваш реальный ключ
+    const expectedApiKey = '12345678910';
 
     if (!apiKey || apiKey !== expectedApiKey) {
       return res.status(403).json({ error: 'Forbidden' });
@@ -32,21 +31,17 @@ app.use((req, res, next) => {
   next();
 });
 
-// Обработчик POST запросов для /chains
 app.post('/chains', (req, res) => {
   const newChain = req.body;
   const chainId = newChain.id;
 
-  // Проверка на наличие объекта с таким id
   const existingChain = db.get('chains').find({ id: chainId }).value();
   if (existingChain) {
     return res.status(400).json({ error: 'Chain with this ID already exists' });
   }
 
-  // Добавляем в основную коллекцию только основные поля
   db.get('chains').push({ id: chainId, name: newChain.name }).write();
 
-  // Добавляем в соответствующие коллекции
   db.get('shortNames').push({ id: chainId, shortName: newChain.shortName, chainId: chainId }).write();
   db.get('chainIds').push({ id: chainId, chainId: chainId, chainIdValue: newChain.chainIdValue }).write();
   db.get('networks').push({ id: chainId, network: newChain.network, chainId: chainId }).write();
@@ -67,12 +62,11 @@ app.post('/chains', (req, res) => {
   res.status(201).json(newChain);
 });
 
-// Custom route to get chain info with all parameters
 app.get('/chains/:id/full', (req, res) => {
   const chainId = parseInt(req.params.id, 10);
   const chain = db.get('chains').find({ id: chainId }).value();
   if (!chain) {
-    return res.status(404).json({ error: 'Chain not found' });
+    return res.status(404).json({ error: 'not found' });
   }
 
   const shortName = db.get('shortNames').find({ chainId: chainId }).value();
@@ -95,12 +89,11 @@ app.get('/chains/:id/full', (req, res) => {
   res.json(fullChainInfo);
 });
 
-// Обработчик GET запросов для /chains/:id
 app.get('/chains/:id', (req, res) => {
   const chainId = parseInt(req.params.id, 10);
   const chain = db.get('chains').find({ id: chainId }).value();
   if (!chain) {
-    return res.status(404).json({ error: 'Chain not found' });
+    return res.status(404).json({ error: 'not found' });
   }
   res.json(chain);
 });
@@ -110,7 +103,7 @@ app.use((req, res, next) => {
   next();
 });
 
-const router = jsonServer.router(db); // Используем базу данных из lowdb напрямую
+const router = jsonServer.router(db);
 app.use(router);
 
 const port = process.env.PORT || 3000;

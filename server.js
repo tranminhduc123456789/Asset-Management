@@ -23,7 +23,7 @@ app.use(jsonServer.bodyParser);
 app.use((req, res, next) => {
   if (req.method !== 'GET') {
     const apiKey = req.headers['x-api-key'];
-    const expectedApiKey = 'your-secret-api-key'; // Замените на ваш реальный ключ
+    const expectedApiKey = '12345678910'; // Замените на ваш реальный ключ
 
     if (!apiKey || apiKey !== expectedApiKey) {
       return res.status(403).json({ error: 'Forbidden' });

@@ -19,11 +19,10 @@ const middlewares = jsonServer.defaults();
 app.use(middlewares);
 app.use(jsonServer.bodyParser);
 
-// Middleware для проверки ключа в заголовках
 app.use((req, res, next) => {
   if (req.method !== 'GET') {
     const apiKey = req.headers['x-api-key'];
-    const expectedApiKey = '12345678910'; // Замените на ваш реальный ключ
+    const expectedApiKey = '12345678910';
 
     if (!apiKey || apiKey !== expectedApiKey) {
       return res.status(403).json({ error: 'Forbidden' });
@@ -32,7 +31,31 @@ app.use((req, res, next) => {
   next();
 });
 
-// Custom route to get chain info with all parameters
+app.post('/chains', (req, res) => {
+  const newChain = req.body;
+  const chainId = newChain.id;
+
+  db.get('chains').push(newChain).write();
+  db.get('shortNames').push({ id: chainId, shortName: newChain.shortName, chainId: chainId }).write();
+  db.get('chainIds').push({ id: chainId, chainId: chainId, chainIdValue: newChain.chainIdValue }).write();
+  db.get('networks').push({ id: chainId, network: newChain.network, chainId: chainId }).write();
+  db.get('nativeCurrencies').push({ 
+    id: chainId, 
+    name: newChain.nativeCurrency.name, 
+    symbol: newChain.nativeCurrency.symbol, 
+    decimals: newChain.nativeCurrency.decimals, 
+    chainId: chainId 
+  }).write();
+  newChain.rpcUrls.forEach((url, index) => {
+    db.get('rpcUrls').push({ id: chainId * 100 + index, url: url, chainId: chainId }).write();
+  });
+  newChain.blockExplorerUrls.forEach((url, index) => {
+    db.get('blockExplorerUrls').push({ id: chainId * 100 + index, url: url, chainId: chainId }).write();
+  });
+
+  res.status(201).json(newChain);
+});
+
 app.get('/chains/:id/full', (req, res) => {
   const chainId = parseInt(req.params.id, 10);
   const chain = db.get('chains').find({ id: chainId }).value();

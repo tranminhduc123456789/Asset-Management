@@ -1,14 +1,59 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "chains": [
+    { "id": 1, "name": "Ethereum" },
+    { "id": 2, "name": "Binance Smart Chain" },
+    { "id": 3, "name": "Polygon" },
+    { "id": 4, "name": "Avalanche" },
+    { "id": 5, "name": "Fantom" }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
+  "shortNames": [
+    { "id": 1, "shortName": "ETH", "chainId": 1 },
+    { "id": 2, "shortName": "BSC", "chainId": 2 },
+    { "id": 3, "shortName": "MATIC", "chainId": 3 },
+    { "id": 4, "shortName": "AVAX", "chainId": 4 },
+    { "id": 5, "shortName": "FTM", "chainId": 5 }
   ],
-  "profile": {
-    "name": "test1"
-  }
+  "chainIds": [
+    { "id": 1, "chainId": 1, "chainIdValue": 1 },
+    { "id": 2, "chainId": 2, "chainIdValue": 56 },
+    { "id": 3, "chainId": 3, "chainIdValue": 137 },
+    { "id": 4, "chainId": 4, "chainIdValue": 43114 },
+    { "id": 5, "chainId": 5, "chainIdValue": 250 }
+  ],
+  "networks": [
+    { "id": 1, "network": "mainnet", "chainId": 1 },
+    { "id": 2, "network": "mainnet", "chainId": 2 },
+    { "id": 3, "network": "mainnet", "chainId": 3 },
+    { "id": 4, "network": "mainnet", "chainId": 4 },
+    { "id": 5, "network": "mainnet", "chainId": 5 }
+  ],
+  "nativeCurrencies": [
+    { "id": 1, "name": "Ether", "symbol": "ETH", "decimals": 18, "chainId": 1 },
+    { "id": 2, "name": "Binance Coin", "symbol": "BNB", "decimals": 18, "chainId": 2 },
+    { "id": 3, "name": "Matic", "symbol": "MATIC", "decimals": 18, "chainId": 3 },
+    { "id": 4, "name": "Avalanche", "symbol": "AVAX", "decimals": 18, "chainId": 4 },
+    { "id": 5, "name": "Fantom", "symbol": "FTM", "decimals": 18, "chainId": 5 }
+  ],
+  "rpcUrls": [
+    { "id": 1, "url": "https://mainnet.infura.io/v3/YOUR-PROJECT-ID", "chainId": 1 },
+    { "id": 2, "url": "https://api.mycryptoapi.com/eth", "chainId": 1 },
+    { "id": 3, "url": "https://cloudflare-eth.com", "chainId": 1 },
+    { "id": 4, "url": "https://bsc-dataseed.binance.org/", "chainId": 2 },
+    { "id": 5, "url": "https://bsc-dataseed1.defibit.io/", "chainId": 2 },
+    { "id": 6, "url": "https://bsc-dataseed1.ninicoin.io/", "chainId": 2 },
+    { "id": 7, "url": "https://rpc-mainnet.maticvigil.com/", "chainId": 3 },
+    { "id": 8, "url": "https://rpc-mainnet.matic.network", "chainId": 3 },
+    { "id": 9, "url": "https://rpc-mainnet.matic.quiknode.pro", "chainId": 3 },
+    { "id": 10, "url": "https://api.avax.network/ext/bc/C/rpc", "chainId": 4 },
+    { "id": 11, "url": "https://api.avax-test.network/ext/bc/C/rpc", "chainId": 4 },
+    { "id": 12, "url": "https://rpcapi.fantom.network", "chainId": 5 },
+    { "id": 13, "url": "https://rpc.fantom.network", "chainId": 5 }
+  ],
+  "blockExplorerUrls": [
+    { "id": 1, "url": "https://etherscan.io", "chainId": 1 },
+    { "id": 2, "url": "https://bscscan.com", "chainId": 2 },
+    { "id": 3, "url": "https://polygonscan.com", "chainId": 3 },
+    { "id": 4, "url": "https://cchain.explorer.avax.network", "chainId": 4 },
+    { "id": 5, "url": "https://ftmscan.com", "chainId": 5 }
+  ]
 }

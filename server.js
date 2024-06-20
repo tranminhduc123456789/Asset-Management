@@ -89,6 +89,32 @@ app.get('/chains/:id/full', (req, res) => {
   res.json(fullChainInfo);
 });
 
+app.get('/chains/full', (req, res) => {
+  const chains = db.get('chains').value();
+
+  const fullChainsInfo = chains.map(chain => {
+    const chainId = chain.id;
+    const shortName = db.get('shortNames').find({ chainId: chainId }).value();
+    const chainIdValue = db.get('chainIds').find({ chainId: chainId }).value();
+    const network = db.get('networks').find({ chainId: chainId }).value();
+    const nativeCurrency = db.get('nativeCurrencies').find({ chainId: chainId }).value();
+    const rpcUrls = db.get('rpcUrls').filter({ chainId: chainId }).map('url').value();
+    const blockExplorerUrls = db.get('blockExplorerUrls').filter({ chainId: chainId }).map('url').value();
+
+    return {
+      ...chain,
+      shortName: shortName ? shortName.shortName : null,
+      chainIdValue: chainIdValue ? chainIdValue.chainIdValue : null,
+      network: network ? network.network : null,
+      nativeCurrency: nativeCurrency ? nativeCurrency : null,
+      rpcUrls: rpcUrls,
+      blockExplorerUrls: blockExplorerUrls
+    };
+  });
+
+  res.json(fullChainsInfo);
+});
+
 app.get('/chains/:id', (req, res) => {
   const chainId = parseInt(req.params.id, 10);
   const chain = db.get('chains').find({ id: chainId }).value();

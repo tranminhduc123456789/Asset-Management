@@ -62,6 +62,41 @@ app.post('/chains', (req, res) => {
   res.status(201).json(newChain);
 });
 
+app.put('/chains/:id', (req, res) => {
+  const chainId = parseInt(req.params.id, 10);
+  const updatedChain = req.body;
+
+  const chain = db.get('chains').find({ id: chainId }).value();
+  if (!chain) {
+    return res.status(404).json({ error: 'Chain not found' });
+  }
+
+  db.get('chains').find({ id: chainId }).assign({ name: updatedChain.name }).write();
+
+  db.get('shortNames').find({ chainId: chainId }).assign({ shortName: updatedChain.shortName }).write();
+  db.get('chainIds').find({ chainId: chainId }).assign({ chainIdValue: updatedChain.chainIdValue }).write();
+  db.get('networks').find({ chainId: chainId }).assign({ network: updatedChain.network }).write();
+  db.get('nativeCurrencies').find({ chainId: chainId }).assign({ 
+    name: updatedChain.nativeCurrency.name, 
+    symbol: updatedChain.nativeCurrency.symbol, 
+    decimals: updatedChain.nativeCurrency.decimals 
+  }).write();
+
+  // Удаление старых RPC URLs и блок-эксплореров
+  db.get('rpcUrls').remove({ chainId: chainId }).write();
+  db.get('blockExplorerUrls').remove({ chainId: chainId }).write();
+
+  // Добавление новых RPC URLs и блок-эксплореров
+  updatedChain.rpcUrls.forEach((url, index) => {
+    db.get('rpcUrls').push({ id: chainId * 100 + index, url: url, chainId: chainId }).write();
+  });
+  updatedChain.blockExplorerUrls.forEach((url, index) => {
+    db.get('blockExplorerUrls').push({ id: chainId * 100 + index, url: url, chainId: chainId }).write();
+  });
+
+  res.status(200).json(updatedChain);
+});
+
 app.get('/chains/:id/full', (req, res) => {
   const chainId = parseInt(req.params.id, 10);
   const chain = db.get('chains').find({ id: chainId }).value();

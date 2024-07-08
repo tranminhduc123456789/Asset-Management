@@ -1,14 +1,28 @@
-{
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+[
+  {
+    "courseName": "Introduction to Computer Science",
+    "averageScore": 88,
+    "intro": "This course introduces fundamental concepts in computer science."
+  },
+  {
+    "courseName": "Database Management Systems",
+    "averageScore": 82,
+    "intro": "Learn about designing and managing databases efficiently."
+  },
+  {
+    "courseName": "Artificial Intelligence",
+    "averageScore": 90,
+    "intro": "Explore the principles and applications of artificial intelligence."
+  },
+  {
+    "courseName": "Mobile App Development",
+    "averageScore": 85,
+    "intro": "Develop mobile applications for iOS and Android platforms."
+  },
+  {
+    "courseName": "Web Development",
+    "averageScore": 80,
+    "intro": "Master front-end and back-end web development technologies."
   }
-}
+]
+

@@ -1,0 +1,32 @@
+{
+    "mobiles":[
+        {
+          "id": 1,
+          "name": "iPhone 12",
+          "price": 79999,
+          "ram":32,
+          "storage":256
+        },
+        {
+          "id": 2,
+          "name": "Galaxy S21",
+          "price": 49999,
+          "ram":16,
+          "storage":128
+        },
+        {
+          "id": 3,
+          "name": "Pixel 5",
+          "price": 39999,
+          "ram":8,
+          "storage":64
+        },
+        {
+            "id": 4,
+            "name": "one plus",
+            "price": 19999,
+            "ram":6,
+            "storage":64
+          }
+      ]
+}

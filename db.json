@@ -8,6 +8,27 @@
     { "id": 1, "body": "some comment", "postId": 1 },
     { "id": 2, "body": "some comment", "postId": 1 }
   ],
+  "order": {
+    "address": "123 av3-",
+    "status": "active",
+    "date": "12/08/2024",
+    "dogs": [
+      {
+        "name": "cola",
+        "info": {
+          "chicken": 12,
+          "beef": 12
+        }
+      },
+      {
+        "name": "ibel",
+        "info": {
+          "chicken": 10,
+          "beef": 14
+        }
+      }
+    ]
+  },
   "profile": {
     "name": "typicode"
   }

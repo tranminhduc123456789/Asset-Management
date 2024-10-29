@@ -1,14 +1,21 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+  "identity": {
+    "name": "Alex Stilian",
+    "role": "Store Associate",
+    "location": "Home Depot, [City, State]",
+    "tools": [
+      "Point of Sale (POS) System",
+      "Inventory Management Software",
+      "Safety Equipment (gloves, goggles)",
+      "Hand Tools (screwdrivers, hammers)",
+      "Forklift (if certified)"
+    ],
+    "specialty": [
+      "Customer Service",
+      "Home Improvement Knowledge",
+      "Product Display and Merchandising",
+      "Inventory Control",
+      "Sales Support"
+    ]
   }
 }

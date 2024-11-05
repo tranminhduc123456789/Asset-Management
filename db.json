@@ -1,14 +1,65 @@
-{
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
-}
+[
+	{
+		"orderId": "ORD-1697985264378-327",
+		"firstName": "John",
+		"lastName": "Doe",
+		"email": "johndoe@example.com",
+		"phone": "123-456-7890",
+		"address": "123 Main St",
+		"city": "Los Angeles",
+		"state": "CA",
+		"zipCode": "90001",
+		"selectedStyle": "Modern",
+		"selectedMaterial": "Wood",
+		"selectedColor": "Walnut",
+		"quantity": 2,
+		"totalPrice": 150.00,
+		"comments": "Please ensure quick delivery.",
+		"image": "https://example.com/image1.jpg",
+		"status": "pending",
+		"createdAt": "2024-11-05T10:15:00.000Z",
+		"updatedAt": "2024-11-05T10:15:00.000Z"
+	},
+	{
+		"orderId": "ORD-1697985265392-763",
+		"firstName": "Jane",
+		"lastName": "Smith",
+		"email": "janesmith@example.com",
+		"phone": "987-654-3210",
+		"address": "456 Elm St",
+		"city": "New York",
+		"state": "NY",
+		"zipCode": "10001",
+		"selectedStyle": "Classic",
+		"selectedMaterial": "Metal",
+		"selectedColor": "Black",
+		"quantity": 1,
+		"totalPrice": 80.00,
+		"comments": "Gift wrap this item.",
+		"image": "https://example.com/image2.jpg",
+		"status": "processing",
+		"createdAt": "2024-11-05T10:16:00.000Z",
+		"updatedAt": "2024-11-05T10:16:00.000Z"
+	},
+	{
+		"orderId": "ORD-1697985266415-532",
+		"firstName": "Alice",
+		"lastName": "Johnson",
+		"email": "alicej@example.com",
+		"phone": "555-123-4567",
+		"address": "789 Maple Ave",
+		"city": "Chicago",
+		"state": "IL",
+		"zipCode": "60614",
+		"selectedStyle": "Contemporary",
+		"selectedMaterial": "Glass",
+		"selectedColor": "Clear",
+		"quantity": 3,
+		"totalPrice": 210.00,
+		"comments": "Fragile item, handle with care.",
+		"image": "https://example.com/image3.jpg",
+		"status": "shipped",
+		"createdAt": "2024-11-05T10:17:00.000Z",
+		"updatedAt": "2024-11-05T10:17:00.000Z"
+	}
+]

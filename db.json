@@ -1,14 +1,79 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "users": [
+    {
+      "id": "3",
+      "email": "codyvandijk@realestatecare.com",
+      "password": "admin123"
+    },
+    {
+      "id": "4",
+      "email": "jennasmith@realestatecare.com",
+      "password": "admin101"
+    },
+    {
+      "id": "5",
+      "email": "emilybosch@realestatecare .com",
+      "password": "admin456"
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "inspections": [
+    {
+      "id": "1",
+      "type": "InProgress",
+      "status": "In progress",
+      "details": "Open inspection scheduled for location A.",
+        "address": "123 Maple St, Springfield",
+      "scheduledDate": "2023-12-01"
+    },
+    {
+      "id": "10",
+      "type": "InProgress",
+      "status": "In progress",
+      "details": "Open inspection scheduled for location A.",
+      "address": "123 Maple St, Springfield",
+      "scheduledDate": "2023-12-02"
+    },
+    {
+      "id": "2",
+      "type": "Completed",
+      "status": "Closed",
+      "details": "Completed inspection at location B."
+    },
+    {
+      "id": "4",
+      "type": "Open",
+      "status": "In progress",
+      "details": "Open inspection scheduled for location A.",
+      "address": "456 Oak St, Metropolis"
+    },
+    {
+      "id": "16",
+      "type": "Completed",
+      "status": "Closed",
+      "details": "Completed inspection at location B.",
+      "address": "789 Pine St, Gotham"
+    },
+    {
+      "id": "5",
+      "type": "Completed",
+      "status": "Closed",
+      "details": "Completed inspection at location B.",
+      "address": "101 Elm St, Star City"
+    },
+    {
+      "id": "6",
+      "type": "InProgress",
+      "status": "In progress",
+      "details": "Open inspection scheduled for location A.",
+      "scheduledDate": "2023-12-01"
+    },
+    {
+      "id": "7",
+      "type": "InProgress",
+      "status": "In progress",
+      "details": "Open inspection scheduled for location A.",
+      "address": "202 Birch St, Central City",
+      "scheduledDate": "2023-12-02"
+    }
+  ]
 }

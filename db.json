@@ -1,23 +1,10 @@
 {
   "posts": [
-    { 
-"type": "Stock In",
-"phone_number": "091-123-4567",
-"user_name": "Nguyễn Văn A",
-"description": "Computer Science and Design Technology department has requested these monitors to replace outdated displays in their computer labs. The current monitors lack the resolution and color accuracy required for advanced design software, programming environments, and multimedia applications.",
-"request_date": "2023-10-01",
-"details": {
-            "assets_name": "Laptop Dell XPS 13",
-            "serial_number": "D1234567890",
-            "asset_type": "Laptop",
-            "asset_category": "Electronics",
-"asset_description": "High-resolution display for vocational training in graphic design, video editing, and programming",
-"asset_status": "Available",
-"Expected Stock In Date": "2/12/2024",
-"Actual Stock In Date": "2/12/2024"
-                }
+    {
+      "id": 1,
+      "title": "hello"
     }
-      ],
+  ],
   "profile": {
     "name": "typicode"
   }

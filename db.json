@@ -1,12 +1,14 @@
 {
   "posts": [
     {
+"Id": "28",
       "type": "Stock In",
       "phone_number": "091-123-4567",
       "user_name": "Nguyễn Văn A",
       "description": "Computer Science and Design Technology department has requested these monitors to replace outdated displays in their computer labs. The current monitors lack the resolution and color accuracy required for advanced design software, programming environments, and multimedia applications.",
       "request_date": "1/12/2024",
       "details": {
+"Id": "93",
         "assets_name": "Laptop Dell XPS 13",
         "serial_number": "D1234567890",
         "asset_type": "Laptop",
@@ -20,12 +22,14 @@
       }
     },
     {
+"Id": "48",
       "type": "Relocation",
       "phone_number": "091-444-5678",
       "user_name": "Lê Minh C",
       "description": "Room 150 in need of a screen for teaching",
       "request_date": "1/12/2024",
       "details": {
+"Id": "52",
         "assets_name": "75 inch Screen HYOSUNG",
         "serial_number": "S9876543210",
         "asset_type": "Teaching Screen",
@@ -40,12 +44,14 @@
       }
     },
     {
+"Id": "74",
       "type": "Loan",
       "phone_number": "091-555-1234",
       "user_name": "Phạm Thị D",
       "description": "Request a portable electric piano for teaching piano class",
       "request_date": "1/12/2024",
       "details": {
+"Id": "32",
         "assets_name": "Piano Roland FP-60X-BK",
         "serial_number": "S2345678901",
         "asset_type": "Piano",
@@ -58,12 +64,14 @@
       }
     },
     {
+"Id": "102",
       "type": "Maintenance",
       "phone_number": "090-333-3333",
       "user_name": "Ngô Quốc E",
       "description": "The infrared stove cannot turn on, but it still receives electricity. Maintain at room 300 or bring it to the distributor, the information is inside the package",
       "request_date": "1/12/2024",
       "details": {
+"Id": "88",
         "assets_name": "Infrared Stove Sunhouse SHB9122MT",
         "serial_number": "E1122334455",
         "asset_type": "Cooking Stove",

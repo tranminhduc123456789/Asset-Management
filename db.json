@@ -25,8 +25,8 @@
             "https://s.net.vn/y6dE",
             "https://s.net.vn/y6dE"
           ]
-        }
-{
+        },
+        {
           "Id": "90",
           "assets_name": "Samsung 24-inch",
           "serial_number": "M9876543210",
@@ -37,7 +37,7 @@
           "expected_stock_in_date": "5/12/2024",
           "actual_stock_in_date": "",
           "detail_description": "Monitor is currently in transit, expected delivery within the next few days.",
-          "detail_status": "Scheduled",
+          "detail_status": "Scheduled"
         },
         {
           "Id": "91",
@@ -50,7 +50,7 @@
           "expected_stock_in_date": "3/12/2024",
           "actual_stock_in_date": "3/12/2024",
           "detail_description": "The keyboard was received without any issues, fully functional.",
-          "detail_status": "Completed",
+          "detail_status": "Completed"
         },
         {
           "Id": "92",
@@ -63,7 +63,7 @@
           "expected_stock_in_date": "4/12/2024",
           "actual_stock_in_date": "4/12/2024",
           "detail_description": "Received in excellent condition, all features tested and working.",
-          "detail_status": "Completed",
+          "detail_status": "Completed"
         },
         {
           "Id": "93",
@@ -76,7 +76,7 @@
           "expected_stock_in_date": "6/12/2024",
           "actual_stock_in_date": "",
           "detail_description": "Monitor scheduled for delivery soon, expected to meet high-quality display standards.",
-          "detail_status": "Scheduled",
+          "detail_status": "Scheduled"
         }
       ]
     },

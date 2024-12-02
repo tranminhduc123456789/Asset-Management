@@ -34,6 +34,26 @@
         "actual_relocation_date": "2/12/2024",
         "old_location": "Main Storage",
         "new_location": "Room 150",
+"relocate_description": "Asset: 75 inch Screen HYOSUNG, Serial Number: S9876543210 relocated from Main Storage to Room 150 on 2/12/2024",
+"detail_description": "The Package and asset are completely fine, no damage",
+        "detail_status": "Completed"
+      }
+    },
+{
+      "type": "Loan",
+      "phone_number": "091-555-1234",
+      "user_name": "Phạm Thị D",
+      "description": "Request a portable electric piano for teaching piano class",
+      "request_date": "1/12/2024",
+      "details": {
+        "assets_name": "Piano Roland FP-60X-BK",
+        "serial_number": "S2345678901",
+        "asset_type": "Piano",
+        "asset_category": "Musical",        
+"receive_date": "2/12/2024",
+"expected_return_date": "10/12/2024",
+        "actual_return_date": "11/12/2024",
+"detail_description": "The Piano comes with an electric piano, an adapter and a case",
         "detail_status": "Completed"
       }
     }

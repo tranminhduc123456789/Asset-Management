@@ -5,18 +5,38 @@
       "phone_number": "091-123-4567",
       "user_name": "Nguyễn Văn A",
       "description": "Computer Science and Design Technology department has requested these monitors to replace outdated displays in their computer labs. The current monitors lack the resolution and color accuracy required for advanced design software, programming environments, and multimedia applications.",
-      "request_date": "2023-10-01",
+      "request_date": "1/12/2024",
       "details": {
         "assets_name": "Laptop Dell XPS 13",
         "serial_number": "D1234567890",
         "asset_type": "Laptop",
-        "asset_category": "Electronics",
+        "asset_category": "Developing",
         "asset_description": "High-resolution display for vocational training in graphic design, video editing, and programming",
         "asset_status": "Available",
-        "Expected Stock In Date": "2/12/2024",
-        "Actual Stock In Date": "2/12/2024"
+        "expected_stock_in_date": "2/12/2024",
+        "actual_stock_in_date": "2/12/2024",
+"detail_description": "The Package and asset are completely fine, no damage",
+"detail_status": "Completed"
       }
-    }
+    },
+{
+"type": "Relocation",
+"phone_number": "091-555-1234",
+"user_name": "Lê Minh C",
+"description": "Room 150 in need of a screen for teaching",
+"request_date": "1/12/2024",
+"details": {
+"assets_name": "75 inch Screen HYOSUNG",
+"serial_number": "S9876543210",
+"asset_type": "Teaching Screen",
+"asset_category": "Teaching",
+"expected_relocation_date": "2/12/2024",
+"actual_relocation_date": "2/12/2024",
+"old_location": "Main Storage",
+"new_location": "Room 150",
+"detail_status" "Completed"
+}
+}
   ],
   "profile": {
     "name": "typicode"

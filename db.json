@@ -7,7 +7,7 @@
       "user_name": "Nguyễn Văn A",
       "description": "Computer Science and Design Technology department has requested these monitors to replace outdated displays in their computer labs. The current monitors lack the resolution and color accuracy required for advanced design software, programming environments, and multimedia applications.",
       "request_date": "1/12/2024",
-"status": "In Progress",
+      "status": "In Progress",
       "details": [
         {
           "Id": "93",
@@ -21,12 +21,11 @@
           "actual_stock_in_date": "2/12/2024",
           "detail_description": "The Package and asset are completely fine, no damage",
           "detail_status": "Completed",
-"gallery": {
-"https://images.unsplash.com/photo-1628200558926-463e8390113d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-"https://images.unsplash.com/photo-1628200558926-463e8390113d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-}
-        },
-        
+          "gallery": [
+            "https://images.unsplash.com/photo-1628200558926-463e8390113d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1628200558926-463e8390113d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          ]
+        }
       ]
     },
     {
@@ -36,7 +35,7 @@
       "user_name": "Lê Minh C",
       "description": "Room 150 in need of a screen for teaching",
       "request_date": "1/12/2024",
-"status": "Completed",
+      "status": "Completed",
       "details": [
         {
           "Id": "52",
@@ -50,7 +49,7 @@
           "new_location": "Room 150",
           "relocate_description": "Asset: 75 inch Screen HYOSUNG, Serial Number: S9876543210 relocated from Main Storage to Room 150 on 2/12/2024",
           "detail_description": "The Package and asset are completely fine, no damage",
-          "detail_status": "Completed",
+          "detail_status": "Completed"
         }
       ]
     },
@@ -61,7 +60,7 @@
       "user_name": "Phạm Thị D",
       "description": "Request a portable electric piano for teaching piano class",
       "request_date": "1/12/2024",
-"status": "Completed",
+      "status": "Completed",
       "details": [
         {
           "Id": "32",
@@ -73,33 +72,33 @@
           "expected_return_date": "10/12/2024",
           "actual_return_date": "11/12/2024",
           "detail_description": "The Piano comes with an electric piano, an adapter and a case",
-          "detail_status": "Completed",
+          "detail_status": "Completed"
         }
       ]
     },
-{
-  "Id": "75",
-  "type": "Loan",
-  "phone_number": "091-555-6789",
-  "user_name": "Nguyễn Văn A",
-  "description": "Request a digital camera for photography class project",
-  "request_date": "2/12/2024",
-  "status": "In Progress",
-  "details": [
     {
-      "Id": "33",
-      "assets_name": "Canon EOS 90D",
-      "serial_number": "C9876543210",
-      "asset_type": "Camera",
-      "asset_category": "Photography",
-      "receive_date": "3/12/2024",
-      "expected_return_date": "15/12/2024",
-      "actual_return_date": null,
-      "detail_description": "The Camera comes with a lens, memory card, and charger",
-      "detail_status": "In Progress",
-    }
-  ]
-},
+      "Id": "75",
+      "type": "Loan",
+      "phone_number": "091-555-6789",
+      "user_name": "Nguyễn Văn A",
+      "description": "Request a digital camera for photography class project",
+      "request_date": "2/12/2024",
+      "status": "In Progress",
+      "details": [
+        {
+          "Id": "33",
+          "assets_name": "Canon EOS 90D",
+          "serial_number": "C9876543210",
+          "asset_type": "Camera",
+          "asset_category": "Photography",
+          "receive_date": "3/12/2024",
+          "expected_return_date": "15/12/2024",
+          "actual_return_date": null,
+          "detail_description": "The Camera comes with a lens, memory card, and charger",
+          "detail_status": "In Progress"
+        }
+      ]
+    },
     {
       "Id": "102",
       "type": "Maintenance",
@@ -107,7 +106,7 @@
       "user_name": "Ngô Quốc E",
       "description": "The infrared stove cannot turn on, but it still receives electricity. Maintain at room 300 or bring it to the distributor, the information is inside the package",
       "request_date": "1/12/2024",
-"status": "Completed",
+      "status": "Completed",
       "details": [
         {
           "Id": "88",
@@ -118,7 +117,7 @@
           "expected_maintenance_date": "10/12/2024",
           "actual_maintenance_date": "11/12/2024",
           "detail_description": "The stove wire was burned, and replaced by a new wire. The stove functions normally",
-          "detail_status": "Completed",
+          "detail_status": "Completed"
         }
       ]
     }

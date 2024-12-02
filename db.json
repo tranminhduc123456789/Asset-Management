@@ -7,7 +7,7 @@
       "user_name": "Nguyễn Văn A",
       "description": "Computer Science and Design Technology department has requested these monitors to replace outdated displays in their computer labs. The current monitors lack the resolution and color accuracy required for advanced design software, programming environments, and multimedia applications.",
       "request_date": "1/12/2024",
-"Status": "In Progress",
+"status": "In Progress",
       "details": [
         {
           "Id": "93",
@@ -83,7 +83,7 @@
       "user_name": "Lê Minh C",
       "description": "Room 150 in need of a screen for teaching",
       "request_date": "1/12/2024",
-"Status": "Completed",
+"status": "Completed",
       "details": [
         {
           "Id": "52",
@@ -108,7 +108,7 @@
       "user_name": "Phạm Thị D",
       "description": "Request a portable electric piano for teaching piano class",
       "request_date": "1/12/2024",
-"Status": "Completed",
+"status": "Completed",
       "details": [
         {
           "Id": "32",
@@ -131,7 +131,7 @@
   "user_name": "Nguyễn Văn A",
   "description": "Request a digital camera for photography class project",
   "request_date": "2/12/2024",
-  "Status": "In Progress",
+  "status": "In Progress",
   "details": [
     {
       "Id": "33",
@@ -154,7 +154,7 @@
       "user_name": "Ngô Quốc E",
       "description": "The infrared stove cannot turn on, but it still receives electricity. Maintain at room 300 or bring it to the distributor, the information is inside the package",
       "request_date": "1/12/2024",
-"Status": "Completed",
+"status": "Completed",
       "details": [
         {
           "Id": "88",

@@ -1,118 +1,12 @@
 {
   "posts": [
     {
-      "Id": "28",
-      "type": "Stock In",
-      "phone_number": "091-123-4567",
-      "user_name": "Nguyễn Văn A",
-      "description": "Computer Science and Design Technology department has requested these monitors to replace outdated displays in their computer labs. The current monitors lack the resolution and color accuracy required for advanced design software, programming environments, and multimedia applications.",
-      "request_date": "1/12/2024",
-      "status": "In Progress",
-      "details": [
-        {
-          "Id": "93",
-          "assets_name": "Dell XPS 13",
-          "serial_number": "D1234567890",
-          "asset_type": "Laptop",
-          "asset_category": "Developing",
-          "asset_description": "High-resolution display for vocational training in graphic design, video editing, and programming",
-          "asset_status": "Available",
-          "expected_stock_in_date": "2/12/2024",
-          "actual_stock_in_date": "2/12/2024",
-          "detail_description": "The Package and asset are completely fine, no damage",
-          "detail_status": "Completed",
-          "gallery": [
-            "https://s.net.vn/y6dE",
-            "https://s.net.vn/y6dE"
-          ]
-        },
-        {
-          "Id": "90",
-          "assets_name": "Samsung 24-inch",
-          "serial_number": "M9876543210",
-          "asset_type": "Monitor",
-          "asset_category": "Designing",
-          "asset_description": "24-inch monitor with ultra-clear resolution for detailed design work",
-          "asset_status": "In Transit",
-          "expected_stock_in_date": "5/12/2024",
-          "actual_stock_in_date": "",
-          "detail_description": "Monitor is currently in transit, expected delivery within the next few days.",
-          "detail_status": "Scheduled"
-        },
-        {
-          "Id": "91",
-          "assets_name": "Logitech G Pro",
-          "serial_number": "K111223344",
-          "asset_type": "Keyboard",
-          "asset_category": "Office Equipment",
-          "asset_description": "Mechanical keyboard designed for professional use with responsive keys for coding and design work",
-          "asset_status": "Available",
-          "expected_stock_in_date": "3/12/2024",
-          "actual_stock_in_date": "3/12/2024",
-          "detail_description": "The keyboard was received without any issues, fully functional.",
-          "detail_status": "Completed"
-        },
-        {
-          "Id": "92",
-          "assets_name": "Razer DeathAdder V2",
-          "serial_number": "M2233445566",
-          "asset_type": "Mouse",
-          "asset_category": "Office Equipment",
-          "asset_description": "Ergonomic mouse designed for professional use with high precision and customizable buttons",
-          "asset_status": "Available",
-          "expected_stock_in_date": "4/12/2024",
-          "actual_stock_in_date": "4/12/2024",
-          "detail_description": "Received in excellent condition, all features tested and working.",
-          "detail_status": "Completed"
-        },
-        {
-          "Id": "93",
-          "assets_name": "ASUS ProArt 27-inch",
-          "serial_number": "P555666777",
-          "asset_type": "Monitor",
-          "asset_category": "Designing",
-          "asset_description": "27-inch color-accurate monitor for professional designers and photographers",
-          "asset_status": "Available",
-          "expected_stock_in_date": "6/12/2024",
-          "actual_stock_in_date": "",
-          "detail_description": "Monitor scheduled for delivery soon, expected to meet high-quality display standards.",
-          "detail_status": "Scheduled"
-        }
-      ]
-    },
-    {
-      "Id": "48",
-      "type": "Relocation",
-      "phone_number": "091-444-5678",
-      "user_name": "Lê Minh C",
-      "description": "Room 150 in need of a screen for teaching",
-      "request_date": "1/12/2024",
-      "status": "Completed",
-      "details": [
-        {
-          "Id": "52",
-          "assets_name": "75 inch Screen HYOSUNG",
-          "serial_number": "S9876543210",
-          "asset_type": "Teaching Screen",
-          "asset_category": "Teaching",
-          "expected_relocation_date": "2/12/2024",
-          "actual_relocation_date": "2/12/2024",
-          "old_location": "Main Storage",
-          "new_location": "Room 150",
-          "relocate_description": "Asset: 75 inch Screen HYOSUNG, Serial Number: S9876543210 relocated from Main Storage to Room 150 on 2/12/2024",
-          "detail_description": "The Package and asset are completely fine, no damage",
-          "detail_status": "Completed"
-        }
-      ]
-    },
-    {
       "Id": "74",
-      "type": "Loan",
-      "phone_number": "091-555-1234",
-      "user_name": "Phạm Thị D",
-      "description": "Request a portable electric piano for teaching piano class",
+      "request_code":"LR-1122024-001",
+       "description": "Request a Piano for teaching MUS-102",
       "request_date": "1/12/2024",
-      "status": "Completed",
+"approval_date":"2/12/2024",
+      "status": "In Progress",
       "details": [
         {
           "Id": "32",
@@ -124,52 +18,29 @@
           "expected_return_date": "10/12/2024",
           "actual_return_date": "11/12/2024",
           "detail_description": "The Piano comes with an electric piano, an adapter and a case",
-          "detail_status": "Completed"
+          "detail_status": "Borrowed"
         }
       ]
     },
-    {
-      "Id": "75",
-      "type": "Loan",
-      "phone_number": "091-555-6789",
-      "user_name": "Nguyễn Văn A",
-      "description": "Request a digital camera for photography class project",
-      "request_date": "2/12/2024",
-      "status": "In Progress",
-      "details": [
-        {
-          "Id": "33",
-          "assets_name": "Canon EOS 90D",
-          "serial_number": "C9876543210",
-          "asset_type": "Camera",
-          "asset_category": "Photography",
-          "receive_date": "3/12/2024",
-          "expected_return_date": "15/12/2024",
-          "actual_return_date": null,
-          "detail_description": "The Camera comes with a lens, memory card, and charger",
-          "detail_status": "In Progress"
-        }
-      ]
-    },
-    {
-      "Id": "102",
-      "type": "Maintenance",
-      "phone_number": "090-333-3333",
-      "user_name": "Ngô Quốc E",
-      "description": "The infrared stove cannot turn on, but it still receives electricity. Maintain at room 300 or bring it to the distributor, the information is inside the package",
-      "request_date": "1/12/2024",
+     {
+      "Id": "73",
+      "request_code":"LR-1112024-001",
+       "description": "Request a Piano for teaching MUS-101",
+      "request_date": "1/11/2024",
+"approval_date":"2/11/2024",
       "status": "Completed",
       "details": [
         {
-          "Id": "88",
-          "assets_name": "Infrared Stove Sunhouse SHB9122MT",
-          "serial_number": "E1122334455",
-          "asset_type": "Cooking Stove",
-          "asset_category": "Culinary",
-          "expected_maintenance_date": "10/12/2024",
-          "actual_maintenance_date": "11/12/2024",
-          "detail_description": "The stove wire was burned, and replaced by a new wire. The stove functions normally",
-          "detail_status": "Completed"
+          "Id": "32",
+          "assets_name": "Piano Roland FP-60X-BK",
+          "serial_number": "S2345678901",
+          "asset_type": "Piano",
+          "asset_category": "Musical",
+          "receive_date": "2/11/2024",
+          "expected_return_date": "10/11/2024",
+          "actual_return_date": "11/11/2024",
+          "detail_description": "The Piano comes with an electric piano, an adapter and a case",
+          "detail_status": "Returned"
         }
       ]
     }
